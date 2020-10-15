@@ -1,0 +1,107 @@
+[
+  {
+    "Title": "Split",
+    "UniqueTitle": "Split (float2)",
+    "PinData": [
+      {
+        "Name": "float2",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "R",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float2%.r;"
+        ]
+      },
+      {
+        "Name": "G",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float2%.g;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Split",
+    "UniqueTitle": "Split (float3)",
+    "PinData": [
+      {
+        "Name": "float3",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "R",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float3%.r;"
+        ]
+      },
+      {
+        "Name": "G",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float3%.g;"
+        ]
+      },
+      {
+        "Name": "B",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float3%.b;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Split",
+    "UniqueTitle": "Split (float4)",
+    "PinData": [
+      {
+        "Name": "float4",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "R",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float4%.r;"
+        ]
+      },
+      {
+        "Name": "G",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float4%.g;"
+        ]
+      },
+      {
+        "Name": "B",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float4%.b;"
+        ]
+      },
+      {
+        "Name": "A",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float4%.a;"
+        ]
+      }
+    ]
+  }
+]

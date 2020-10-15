@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D81708AA-4C63-4B88-B375-2212C9034C94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Editor</RootNamespace>
+    <AssemblyName>Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bridge.cs" />
+    <Compile Include="Components\EditorType.cs" />
+    <Compile Include="Components\ExposedVariableData.cs" />
+    <Compile Include="Components\Types\Vec3.cs" />
+    <Compile Include="Components\VariableData.cs" />
+    <Compile Include="DirectXPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DirectXPanel.Designer.cs">
+      <DependentUpon>DirectXPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileExplorer\FileType.cs" />
+    <Compile Include="Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameObjects\GameObjectData.cs" />
+    <Compile Include="Helpers\CloneHelper.cs" />
+    <Compile Include="Helpers\ControlHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="Helpers\PropertyGridHelper.cs" />
+    <Compile Include="Helpers\ShaderHelper.cs" />
+    <Compile Include="Input\MouseMessageFilter.cs" />
+    <Compile Include="Input\InputType.cs" />
+    <Compile Include="Input\KeyInput.cs" />
+    <Compile Include="Input\MouseInput.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ShaderEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShaderEditor.Designer.cs">
+      <DependentUpon>ShaderEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shaders\ShaderCache.cs" />
+    <Compile Include="Shaders\ShaderNodeData.cs" />
+    <Compile Include="Shaders\ShaderType.cs" />
+    <Compile Include="Windows\WindowsMessage.cs" />
+    <EmbeddedResource Include="DirectXPanel.resx">
+      <DependentUpon>DirectXPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShaderEditor.resx">
+      <DependentUpon>ShaderEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(SolutionDir)x64\$(ConfigurationName)\Engine.dll" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y
+xcopy "$(SolutionDir)x64\$(ConfigurationName)\Engine.pdb" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y
+xcopy "$(SolutionDir)Dependencies\Libraries\FreeImage\DLL\FreeImage.dll" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y
+xcopy "$(SolutionDir)Dependencies\Libraries\Physx\Lib\$(ConfigurationName)\PhysX_64.dll" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y
+xcopy "$(SolutionDir)Dependencies\Libraries\Physx\Lib\$(ConfigurationName)\PhysXCommon_64.dll" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y
+xcopy "$(SolutionDir)Dependencies\Libraries\Physx\Lib\$(ConfigurationName)\PhysXFoundation_64.dll" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y
+xcopy "$(SolutionDir)Dependencies\Libraries\Physx\Lib\$(ConfigurationName)\PhysXCooking_64.dll" "$(SolutionDir)Editor\bin\$(ConfigurationName)" /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

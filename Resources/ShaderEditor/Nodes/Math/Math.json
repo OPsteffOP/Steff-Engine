@@ -1,0 +1,816 @@
+[
+  {
+    "Title": "Saturate",
+    "UniqueTitle": "Saturate",
+    "PinData": [
+      {
+        "Name": "float4",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "float4",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = saturate(%INPUT_VARIABLE_NAME_float4%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Clamp",
+    "UniqueTitle": "Clamp",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "min",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "max",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = clamp(%INPUT_VARIABLE_NAME_float%, %INPUT_VARIABLE_NAME_min%, %INPUT_VARIABLE_NAME_max%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Min",
+    "UniqueTitle": "Min (float)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = min(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Min",
+    "UniqueTitle": "Min (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = min(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Min",
+    "UniqueTitle": "Min (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = min(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Min",
+    "UniqueTitle": "Min (float4)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "float4",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = min(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Max",
+    "UniqueTitle": "Max (float)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = max(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Max",
+    "UniqueTitle": "Max (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = max(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Max",
+    "UniqueTitle": "Max (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = max(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Max",
+    "UniqueTitle": "Max (float4)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "float4",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = max(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Sine",
+    "UniqueTitle": "Sine",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = sin(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Arc Sine",
+    "UniqueTitle": "Arc Sine",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = asin(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Cosine",
+    "UniqueTitle": "Cosine",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = cos(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Arc Cosine",
+    "UniqueTitle": "Arc Cosine",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = acos(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Tangent",
+    "UniqueTitle": "Tangent",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = tan(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Arc Tangent",
+    "UniqueTitle": "Arc Tangent",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = atan(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Round",
+    "UniqueTitle": "Round",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = round(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Floor",
+    "UniqueTitle": "Floor",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = floor(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Ceil",
+    "UniqueTitle": "Ceil",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = ceil(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Lerp",
+    "UniqueTitle": "Lerp (float)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "Alpha",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = lerp(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%, %INPUT_VARIABLE_NAME_Alpha%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Lerp",
+    "UniqueTitle": "Lerp (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "Alpha",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = lerp(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%, %INPUT_VARIABLE_NAME_Alpha%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Lerp",
+    "UniqueTitle": "Lerp (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "Alpha",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = lerp(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%, %INPUT_VARIABLE_NAME_Alpha%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Lerp",
+    "UniqueTitle": "Lerp (float4)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "Alpha",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float4",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = lerp(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%, %INPUT_VARIABLE_NAME_Alpha%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Power",
+    "UniqueTitle": "Power",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "Exponent",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = pow(%INPUT_VARIABLE_NAME_float%, %INPUT_VARIABLE_NAME_Exponent%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Power",
+    "UniqueTitle": "Power",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "Exponent",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = pow(%INPUT_VARIABLE_NAME_float%, %INPUT_VARIABLE_NAME_Exponent%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Absolute Value",
+    "UniqueTitle": "Absolute Value",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = abs(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Square Root",
+    "UniqueTitle": "Square Root",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = sqrt(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Sign",
+    "UniqueTitle": "Sign",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = sign(%INPUT_VARIABLE_NAME_float%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Length",
+    "UniqueTitle": "Length (float2)",
+    "PinData": [
+      {
+        "Name": "float2",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = length(%INPUT_VARIABLE_NAME_float2%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Length",
+    "UniqueTitle": "Length (float3)",
+    "PinData": [
+      {
+        "Name": "float3",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = length(%INPUT_VARIABLE_NAME_float3%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Dot",
+    "UniqueTitle": "Dot (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = dot(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Dot",
+    "UniqueTitle": "Dot (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = dot(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Cross",
+    "UniqueTitle": "Cross (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = cross(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Distance",
+    "UniqueTitle": "Distance (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = distance(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Distance",
+    "UniqueTitle": "Distance (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = distance(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Modulo",
+    "UniqueTitle": "Modulo",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = fmod(%INPUT_VARIABLE_NAME_A%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  }
+]

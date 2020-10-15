@@ -1,0 +1,98 @@
+[
+  {
+    "Title": "Subtract",
+    "UniqueTitle": "Subtract (float)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% - %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Subtract",
+    "UniqueTitle": "Subtract (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% - %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Subtract",
+    "UniqueTitle": "Subtract (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% - %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Subtract",
+    "UniqueTitle": "Subtract (float4)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% - %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  }
+]

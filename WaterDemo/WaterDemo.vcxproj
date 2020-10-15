@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D333494F-974D-4727-9681-14B037C99321}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WaterDemo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Dependencies\win64_freeimage.props" />
+    <Import Project="..\Dependencies\win64_vld.props" />
+    <Import Project="..\Dependencies\win64_physx.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Dependencies\win64_freeimage.props" />
+    <Import Project="..\Dependencies\win64_vld.props" />
+    <Import Project="..\Dependencies\win64_physx.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PLUGIN_EXPORTS;NDEBUG;WATERDEMO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)x64\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)Resources\Scripts" /Y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>C:\Users\Administrator\Perforce\STEFF-DESKTOP\Personal\SEScriptCompleter\x64\Release\SEScriptCompleter.exe $(ProjectDir) ScriptComponentExposing
+C:\Users\Administrator\Perforce\STEFF-DESKTOP\Personal\SEVariableExposer\x64\Release\SEVariableExposer.exe "[ \t]*EDITOR_RESERVED\((.*)\)[ \t]+using[ \t]+([^ \t]+)[ \t]*=[ \t]*(.*);" "[ \t]*(EDITOR_HIDDEN)?[ \t]*class[ \t]+([a-zA-Z0-9_]+)[ \t]*(?::[ \t]*(?:[^ \t]+[ \t]+)?([a-zA-Z0-9_]+))?" "[ \t]*EDITOR_READONLY[ \t]+(?:const[ \t]+)?((?:signed[ \t]+)?(?:unsigned[ \t]+)?[a-zA-Z0-9:]+)[ \t]+([a-zA-Z0-9_]+).*;" "[ \t]*EDITOR_READWRITE[ \t]+(?!const)((?:signed[ \t]+)?(?:unsigned[ \t]+)?[a-zA-Z0-9:]+)[ \t]+([a-zA-Z0-9_]+).*;" $(ProjectDir) $(ProjectDir)ScriptComponentExposing.cpp $(ProjectDir)ScriptComponentExposing.h $(ProjectName) 1
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PLUGIN_EXPORTS;_DEBUG;WATERDEMO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)x64\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)Resources\Scripts" /Y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>C:\Users\Administrator\Perforce\STEFF-DESKTOP\Personal\SEScriptCompleter\x64\Release\SEScriptCompleter.exe $(ProjectDir) ScriptComponentExposing
+C:\Users\Administrator\Perforce\STEFF-DESKTOP\Personal\SEVariableExposer\x64\Release\SEVariableExposer.exe "[ \t]*EDITOR_RESERVED\((.*)\)[ \t]+using[ \t]+([^ \t]+)[ \t]*=[ \t]*(.*);" "[ \t]*(EDITOR_HIDDEN)?[ \t]*class[ \t]+([a-zA-Z0-9_]+)[ \t]*(?::[ \t]*(?:[^ \t]+[ \t]+)?([a-zA-Z0-9_]+))?" "[ \t]*EDITOR_READONLY[ \t]+(?:const[ \t]+)?((?:signed[ \t]+)?(?:unsigned[ \t]+)?[a-zA-Z0-9:]+)[ \t]+([a-zA-Z0-9_]+).*;" "[ \t]*EDITOR_READWRITE[ \t]+(?!const)((?:signed[ \t]+)?(?:unsigned[ \t]+)?[a-zA-Z0-9:]+)[ \t]+([a-zA-Z0-9_]+).*;" $(ProjectDir) $(ProjectDir)ScriptComponentExposing.cpp $(ProjectDir)ScriptComponentExposing.h $(ProjectName) 1
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ScriptComponentExposing.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="WaterSplashComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ScriptComponentExposing.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WaterSplashComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{144988a6-4959-434b-9ba6-610fd9b0f994}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,89 @@
+[
+  {
+    "Title": "Merge",
+    "UniqueTitle": "Merge (float2)",
+    "PinData": [
+      {
+        "Name": "R",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "G",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = float2(%INPUT_VARIABLE_NAME_R%, %INPUT_VARIABLE_NAME_G%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Merge",
+    "UniqueTitle": "Merge (float3)",
+    "PinData": [
+      {
+        "Name": "R",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "G",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = float3(%INPUT_VARIABLE_NAME_R%, %INPUT_VARIABLE_NAME_G%, %INPUT_VARIABLE_NAME_B%);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Merge",
+    "UniqueTitle": "Merge (float4)",
+    "PinData": [
+      {
+        "Name": "R",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "G",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "float4",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = float4(%INPUT_VARIABLE_NAME_R%, %INPUT_VARIABLE_NAME_G%, %INPUT_VARIABLE_NAME_B%, %INPUT_VARIABLE_NAME_A%);"
+        ]
+      }
+    ]
+  }
+]

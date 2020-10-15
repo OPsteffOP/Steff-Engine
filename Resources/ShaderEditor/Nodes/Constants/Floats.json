@@ -1,0 +1,166 @@
+[
+  {
+    "Title": "Constant",
+    "UniqueTitle": "Constant (float)",
+    "PinData": [
+      {
+        "Name": "float",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %PROPERTY_VALUE_Value%;"
+        ]
+      }
+    ],
+    "Properties": [
+      {
+        "Category": "Variables",
+        "Name": "Value",
+        "PlaceholderName": "Value",
+        "Description": "Float constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      }
+    ]
+  },
+  {
+    "Title": "Constant",
+    "UniqueTitle": "Constant (float2)",
+    "PinData": [
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = float2(%PROPERTY_VALUE_Value X%, %PROPERTY_VALUE_Value Y%);"
+        ]
+      }
+    ],
+    "Properties": [
+      {
+        "Category": "Variables",
+        "Name": "\t\tValue X",
+        "PlaceholderName": "Value X",
+        "Description": "X value of the float2 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      },
+      {
+        "Category": "Variables",
+        "Name": "\tValue Y",
+        "PlaceholderName": "Value Y",
+        "Description": "Y value of the float2 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      }
+    ]
+  },
+  {
+    "Title": "Constant",
+    "UniqueTitle": "Constant (float3)",
+    "PinData": [
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = float3(%PROPERTY_VALUE_Value R%, %PROPERTY_VALUE_Value G%, %PROPERTY_VALUE_Value B%);"
+        ]
+      }
+    ],
+    "Properties": [
+      {
+        "Category": "Variables",
+        "Name": "\t\t\tValue R",
+        "PlaceholderName": "Value R",
+        "Description": "R value of the float3 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      },
+      {
+        "Category": "Variables",
+        "Name": "\t\tValue G",
+        "PlaceholderName": "Value G",
+        "Description": "G value of the float3 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      },
+      {
+        "Category": "Variables",
+        "Name": "\tValue B",
+        "PlaceholderName": "Value B",
+        "Description": "B value of the float3 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      }
+    ]
+  },
+  {
+    "Title": "Constant",
+    "UniqueTitle": "Constant (float4)",
+    "PinData": [
+      {
+        "Name": "float4",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = float4(%PROPERTY_VALUE_Value R%, %PROPERTY_VALUE_Value G%, %PROPERTY_VALUE_Value B%, %PROPERTY_VALUE_Value A%);"
+        ]
+      }
+    ],
+    "Properties": [
+      {
+        "Category": "Variables",
+        "Name": "\t\t\t\tValue R",
+        "PlaceholderName": "Value R",
+        "Description": "R value of the float4 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      },
+      {
+        "Category": "Variables",
+        "Name": "\t\t\tValue G",
+        "PlaceholderName": "Value G",
+        "Description": "G value of the float4 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      },
+      {
+        "Category": "Variables",
+        "Name": "\t\tValue B",
+        "PlaceholderName": "Value B",
+        "Description": "B value of the float4 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 0,
+        "ReadOnly": false,
+        "Visible": true
+      },
+      {
+        "Category": "Variables",
+        "Name": "\tValue A",
+        "PlaceholderName": "Value A",
+        "Description": "A value of the float4 constant.",
+        "TypeString": "System.Single",
+        "DefaultValue": 1,
+        "ReadOnly": false,
+        "Visible": true
+      }
+    ]
+  }
+]

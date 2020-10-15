@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Benchmarking.h">
+      <Filter>Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJLoader.h">
+      <Filter>Scene\Mesh\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryLoader.h">
+      <Filter>Scene\Mesh\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryWriter.h">
+      <Filter>Scene\Mesh\Writers</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameTimer.h">
+      <Filter>Timers</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffer.h">
+      <Filter>Renderer\ConstantBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Logging.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptManager.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Raycasting</Filter>
+    </ClInclude>
+    <ClInclude Include="Raycast.h">
+      <Filter>Raycasting</Filter>
+    </ClInclude>
+    <ClInclude Include="HitRecord.h">
+      <Filter>Raycasting</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugging.h">
+      <Filter>Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_framework.h" />
+    <ClInclude Include="MouseInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputType.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineIncludes.h" />
+    <ClInclude Include="ConfigManager.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="LineDebugging.h">
+      <Filter>Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshData.h">
+      <Filter>Scene\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferStatic.h">
+      <Filter>Renderer\ConstantBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferDynamic.h">
+      <Filter>Renderer\ConstantBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Scene\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshManager.h">
+      <Filter>Scene\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTypes.h">
+      <Filter>Scene\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryShader.h">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>Debugging\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="UIDebugging.h">
+      <Filter>Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="PosVertexShader.h">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PosTexVertexShader.h">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PosTexInstanceVertexShader.h">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TexColPixelShader.h">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ColPixelShader.h">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TimePosTexVertexShader.h">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterPixelShader.h">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessingEffect.h">
+      <Filter>Renderer\PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessingVertexShader.h">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysxAllocator.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysxErrorCallback.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysxManager.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysxSimulationEventCallback.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysxHelper.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxColliderComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CapsuleColliderComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterControllerComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneColliderComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBodyComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereColliderComponent.h">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="InstancedMeshRendererComponent.h">
+      <Filter>Scene\Components\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRendererComponent.h">
+      <Filter>Scene\Components\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraComponent.h">
+      <Filter>Scene\Components\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="ExposedVariableData.h">
+      <Filter>Editor\Scene Editor\ComponentData</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableData.h">
+      <Filter>Editor\Scene Editor\ComponentData</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorComponentNames.h">
+      <Filter>Editor\Scene Editor\ComponentData</Filter>
+    </ClInclude>
+    <ClInclude Include="Typedefs.h">
+      <Filter>Editor\Scene Editor\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformComponent.h">
+      <Filter>Scene\Components\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectData.h">
+      <Filter>Editor\Scene Editor\GameObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderType.h">
+      <Filter>Renderer\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorSceneStorage.h">
+      <Filter>Editor\Scene Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorShaderStorage.h">
+      <Filter>Editor\Shader Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderData.h">
+      <Filter>Editor\Shader Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorPixelShader.h">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorVertexShader.h">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorType.h">
+      <Filter>Editor\Scene Editor\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptComponentNamesStruct.h">
+      <Filter>Editor\Scene Editor\ComponentData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp" />
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Benchmarking.cpp">
+      <Filter>Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJLoader.cpp">
+      <Filter>Scene\Mesh\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryLoader.cpp">
+      <Filter>Scene\Mesh\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryWriter.cpp">
+      <Filter>Scene\Mesh\Writers</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameTimer.cpp">
+      <Filter>Timers</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptManager.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Raycast.cpp">
+      <Filter>Raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Raycasting</Filter>
+    </ClCompile>
+    <ClCompile Include="Debugging.cpp">
+      <Filter>Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="engine_dllmain.cpp" />
+    <ClCompile Include="ConfigManager.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="LineDebugging.cpp">
+      <Filter>Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshData.cpp">
+      <Filter>Scene\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBuffer.cpp">
+      <Filter>Renderer\ConstantBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Scene\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshManager.cpp">
+      <Filter>Scene\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelShader.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryShader.cpp">
+      <Filter>Renderer\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>Debugging\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>Debugging\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>Debugging\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>Debugging\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>Debugging\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="UIDebugging.cpp">
+      <Filter>Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="PosVertexShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="PosTexVertexShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="PosTexInstanceVertexShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TexColPixelShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ColPixelShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TimePosTexVertexShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterPixelShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessingEffect.cpp">
+      <Filter>Renderer\PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessingVertexShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysxAllocator.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysxErrorCallback.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysxManager.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysxSimulationEventCallback.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysxHelper.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxColliderComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="CapsuleColliderComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterControllerComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneColliderComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBodyComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereColliderComponent.cpp">
+      <Filter>Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="InstancedMeshRendererComponent.cpp">
+      <Filter>Scene\Components\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRendererComponent.cpp">
+      <Filter>Scene\Components\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraComponent.cpp">
+      <Filter>Scene\Components\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorComponentDataFunctions.cpp">
+      <Filter>Editor\Scene Editor\ComponentData</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformComponent.cpp">
+      <Filter>Scene\Components\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorSceneStorage.cpp">
+      <Filter>Editor\Scene Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorShaderStorage.cpp">
+      <Filter>Editor\Shader Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderData.cpp">
+      <Filter>Editor\Shader Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPixelShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Pixel Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorVertexShader.cpp">
+      <Filter>Renderer\Shader\Shaders\Vertex Shaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{87d09c94-817b-4f32-9a63-5d64f0d944ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timers">
+      <UniqueIdentifier>{0c88e2d9-56ee-4963-b633-a8d36485bfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{f262b3a2-4e9d-4ed1-a1d9-6d93ee68b468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{08b5d8bc-d4ca-424b-9e5a-bc8862bbf6c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{fde0ebcb-3321-40b0-b1f2-3d7a6e4e4e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{e4e4fb2e-9fe3-4297-bd83-53a9a1a2f3a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{1199f3ec-fe06-4754-a276-9b578b68521a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Mesh">
+      <UniqueIdentifier>{dfc429fc-ade3-4456-a219-bb742de82176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Mesh\Loaders">
+      <UniqueIdentifier>{562c40b0-55cc-422e-8f7e-7ce876be86d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Mesh\Writers">
+      <UniqueIdentifier>{9b5267c8-33d3-4619-8cc2-ebbe7a501b8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6bfb8cc0-b2d5-465c-8be1-2227c0c19131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{5e1fa4d6-a157-4a4e-8cc6-e7a4c6712964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{c4fec4ac-9561-4d6d-9842-3e7e3f3ae78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\ConstantBuffers">
+      <UniqueIdentifier>{98cab835-a2ec-4a04-96de-05e1be00a13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shader">
+      <UniqueIdentifier>{25dba32d-edfd-4208-a0b9-ffe4fffe85ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting">
+      <UniqueIdentifier>{c0813763-0769-49a6-851f-96233eab8b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Raycasting">
+      <UniqueIdentifier>{e98ed3e7-14e4-41ae-bba4-5a40b36ce302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debugging">
+      <UniqueIdentifier>{b8d613ed-cb09-4de2-9b78-01a3648c65ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debugging\ImGui">
+      <UniqueIdentifier>{2126275c-cdd8-4ab6-91a3-48929ca286e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shader\HLSL Shaders">
+      <UniqueIdentifier>{84703b00-c746-43d1-b6ff-bf6c309703ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shader\Shaders">
+      <UniqueIdentifier>{1d78629d-a2b9-425a-a904-05f1f145f3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shader\Shaders\Vertex Shaders">
+      <UniqueIdentifier>{b70e845f-e25d-4cf3-b03a-9b0e1fc19839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shader\Shaders\Pixel Shaders">
+      <UniqueIdentifier>{b53ab629-950b-427c-98fa-58d26ab3a8bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\PostProcessing">
+      <UniqueIdentifier>{f48ecc27-4f87-4f91-9db7-30776e3bbc0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{9ee1ff94-f69a-4580-abd0-7afb327de995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components">
+      <UniqueIdentifier>{53a1da39-0f8b-47b1-9ab8-b528ceacb0f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components\Physics">
+      <UniqueIdentifier>{25fa1035-2eb8-41e9-9571-c929ba684758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components\Graphics">
+      <UniqueIdentifier>{7d519dbf-626f-4810-bc4a-4a183c6996a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components\Cameras">
+      <UniqueIdentifier>{6dd37798-829d-47d2-b6f6-148d3fa5d456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{17c83714-8aa6-4d8e-afb7-ecbdaf2ed8a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components\Basics">
+      <UniqueIdentifier>{450b0405-d201-4a20-bd09-8b46345c29a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Scene Editor">
+      <UniqueIdentifier>{256ec3f0-16cd-469f-ad71-e5f7df4dd37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Scene Editor\ComponentData">
+      <UniqueIdentifier>{19e08e34-f831-4aae-8929-d1b555eca8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Scene Editor\GameObjectData">
+      <UniqueIdentifier>{38a0b6b9-7eca-4f1c-bda2-7226257f94a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Scene Editor\Types">
+      <UniqueIdentifier>{03cd41b1-7c98-4144-a990-58b761667934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Shader Editor">
+      <UniqueIdentifier>{1d1cc03c-9405-4797-910c-d89899569040}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="MeshPixelShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="MeshVertexShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="LineVertexShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="LinePixelShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="InstancedMeshVertexShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="WaterVertexShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="WaterPixelShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GrayscalePixelShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="PostProcessingVertexShader.hlsl">
+      <Filter>Renderer\Shader\HLSL Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,111 @@
+[
+  {
+    "Title": "Texture",
+    "UniqueTitle": "Texture",
+    "PinData": [
+      {
+        "Name": "Texture",
+        "Type": "OUT",
+        "ValueType": "TEXTURE",
+        "GlobalVariable": "Texture2D %VARIABLE_NAME%;"
+      }
+    ],
+    "Properties": [
+      {
+        "Category": "Variables",
+        "Name": "Texture Path",
+        "PlaceholderName": "Texture Path",
+        "Description": "The exact path where the texture can be found.",
+        "TypeString": "System.String",
+        "DefaultValue": "",
+        "ReadOnly": false,
+        "Visible": true
+      }
+    ]
+  },
+  {
+    "Title": "Sample",
+    "UniqueTitle": "Sample (texCoord)",
+    "PinData": [
+      {
+        "Name": "Texture",
+        "Type": "IN",
+        "ValueType": "TEXTURE"
+      },
+      {
+        "Name": "Pixel",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = %INPUT_GLOBAL_VARIABLE_NAME_Texture%.SampleLevel(%SAMPLER%, %TEXCOORD%, 0);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Sample",
+    "UniqueTitle": "Sample (float2)",
+    "PinData": [
+      {
+        "Name": "Texture",
+        "Type": "IN",
+        "ValueType": "TEXTURE"
+      },
+      {
+        "Name": "TexCoord",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "Pixel",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = %INPUT_GLOBAL_VARIABLE_NAME_Texture%.SampleLevel(%SAMPLER%, %INPUT_VARIABLE_NAME_TexCoord%, 0);"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "World Position",
+    "UniqueTitle": "World Position",
+    "PinData": [
+      {
+        "Name": "float3",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = input.WorldPosition;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Screen Position",
+    "UniqueTitle": "Screen Position",
+    "PinData": [
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = input.position.xy;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Texture Coordinate",
+    "UniqueTitle": "Texture Coordinate",
+    "PinData": [
+      {
+        "Name": "float2",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = input.texCoord;"
+        ]
+      }
+    ]
+  }
+]

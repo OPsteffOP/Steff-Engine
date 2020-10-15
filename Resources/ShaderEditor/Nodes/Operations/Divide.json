@@ -1,0 +1,170 @@
+[
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT",
+        "ShaderCode": [
+          "float %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% / %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float2)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% / %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float3)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% / %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float4)",
+    "PinData": [
+      {
+        "Name": "A",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "B",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_A% / %INPUT_VARIABLE_NAME_B%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float2 / float)",
+    "PinData": [
+      {
+        "Name": "float2",
+        "Type": "IN",
+        "ValueType": "FLOAT2"
+      },
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT2",
+        "ShaderCode": [
+          "float2 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float2% / %INPUT_VARIABLE_NAME_float%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float3 / float)",
+    "PinData": [
+      {
+        "Name": "float3",
+        "Type": "IN",
+        "ValueType": "FLOAT3"
+      },
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT3",
+        "ShaderCode": [
+          "float3 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float3% / %INPUT_VARIABLE_NAME_float%;"
+        ]
+      }
+    ]
+  },
+  {
+    "Title": "Divide",
+    "UniqueTitle": "Divide (float4 / float)",
+    "PinData": [
+      {
+        "Name": "float4",
+        "Type": "IN",
+        "ValueType": "FLOAT4"
+      },
+      {
+        "Name": "float",
+        "Type": "IN",
+        "ValueType": "FLOAT"
+      },
+      {
+        "Name": "result",
+        "Type": "OUT",
+        "ValueType": "FLOAT4",
+        "ShaderCode": [
+          "float4 %VARIABLE_NAME% = %INPUT_VARIABLE_NAME_float4% / %INPUT_VARIABLE_NAME_float%;"
+        ]
+      }
+    ]
+  }
+]
